@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kill Bill</title>
+
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="sky"></div>
+
+      <img src="./assets/pine1.png" class="pine pine1" />
+      <img src="./assets/pine2.png" class="pine pine2" />
+      <img src="./assets/pine3.png" class="pine pine3" />
+      <img src="./assets/pine1.png" class="pine pine4" />
+      <img src="./assets/pine3.png" class="pine pine5" />
+
+      <div class="wall"></div>
+
+      <div class="wall">
+        <div class="rooftile-row">
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+          <img src="./assets/rooftile.png" class="tile" />
+        </div>
+      </div>
+
+      <img src="./assets/oden.png" class="oden" />
+      <img src="./assets/head.png" class="head" />
+      <img src="./assets/kido.png" class="kido ghost ghost1" />
+      <img src="./assets/kido.png" class="kido ghost ghost2" />
+      <img src="./assets/kido.png" class="kido ghost ghost3" />
+      <img src="./assets/kido.png" class="kido kido-main" />
+
+      <div class="credit">
+        <p class="credit1">
+          THE 4<sup>TH</sup> FILM BY <b>QUENTIN TARANTINO</b>
+        </p>
+        <p class="credit2">UNCUT, UNRATED, AND SHOWN IN ITS ENTIRETY</p>
+      </div>
+      <svg class="arc" viewBox="0 0 1512 861" width="1512" height="861">
+        <defs>
+          <path id="track" d="M 550 470 C 560 200, 760 60, 1000 75" />
+
+          <mask
+            id="reveal"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="1512"
+            height="861"
+          >
+            <path
+              id="revealLine"
+              d="M 550 470 C 560 200, 760 60, 1000 75"
+              fill="none"
+              stroke="#fff"
+              stroke-width="200"
+            />
+          </mask>
+        </defs>
+
+        <g mask="url(#reveal)">
+          <text class="arc-text" dy="-12">
+            <textPath href="#track" startOffset="2%">
+              KILL BILL: THE WHOLE BLOODY AFFAIR
+            </textPath>
+          </text>
+        </g>
+      </svg>
+
+      <div class="jp">ザ・ホール・ブラッディー・アフェア<br />キル・ビル</div>
+      <div class="info info1">ONLY IN THEATERS 12/5</div>
+      <div class="info info2">IN 70MM AND 35MM</div>
+    </div>
+  </body>
+</html>
